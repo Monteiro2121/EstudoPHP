@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    margin-top: 5%;
+}
+
+*{
+    background-color: black;
+    color: white;
+}
+
+header{
+    text-align: center;
+    font-size: 42px;
+}
+
+.container h2{
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+  }
+
+  .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    height: 15vh; 
+  }
+  
+  .item svg{
+    cursor: pointer;
+  }
