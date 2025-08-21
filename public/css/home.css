@@ -13,6 +13,10 @@ header{
     font-size: 42px;
 }
 
+.navbar{
+  margin: 0;
+}
+
 .container h2{
     font-size: 32px;
     font-weight: lighter;

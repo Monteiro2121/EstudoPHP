@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\UserTeste;
 
 class FormularioController extends Controller
 {
@@ -12,12 +12,12 @@ class FormularioController extends Controller
 
         return view('formulario'); 
     }
-
+ 
     public function store(Request $request)
     {
         // dd($request);
 
-        User::create([
+        UserTeste::create([
             'name' => $request->name,
             'email' => $request->email,
             'age' => $request->age,
