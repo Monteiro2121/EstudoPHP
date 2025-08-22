@@ -1,47 +1,72 @@
-body{
-    margin: 0;
-    margin-top: 5%;
+body {
+  position: relative;
+  background-image: url('../img/Orla.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  overflow-x: hidden;
 }
 
-*{
-    background-color: black;
-    color: white;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(170, 170, 170, 0.4);
+  z-index: 0; 
+  pointer-events: none; 
 }
 
-header{
-    text-align: center;
-    font-size: 42px;
+.background-wrapper {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1;
 }
+
 
 .navbar{
-  margin: 0;
+  margin-top: 0;
+  background-color: rgba(187, 187, 187, 0.74);
+  height: 65px;
+  width: 100%;
 }
 
-.container h2{
-    font-size: 32px;
-    font-weight: lighter;
+.item svg{
+   cursor: pointer; 
+  }
+
+  .container{
+    display: flex;
+    background-color: gray;
+    height: 480px;
+    width: 720px;
+    margin-top: 5%;
+    position: relative;
+    background-image: url('../img/Ponte.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .banner h1 span {
+    -webkit-text-stroke-width: 0;
+    color: hsl(6, 60%, 60%);
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
-  }
-  
-.item {
-    display: flex;
-    align-items: center;
-    gap: 8px; 
-  }
-
-  .container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 20px; 
-    height: 15vh; 
-  }
-  
-  .item svg{
-    cursor: pointer;
-  }
+h1 {
+  font-size: 90px;
+  color: hsla(120, 100%, 15%, 0.575);
+}

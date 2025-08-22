@@ -34,7 +34,7 @@ body::before {
     content: "";
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 41, 14, 0.288);
+    background: rgba(145, 145, 145, 0.4);
     z-index: 0; 
     pointer-events: none; 
 }
@@ -42,7 +42,7 @@ body::before {
 .background-wrapper > * {
     position: relative;
     z-index: 2;
-  }
+}
 
 header, main, section, article {
     max-width: 570px;
@@ -51,11 +51,11 @@ header, main, section, article {
 header > h1 {
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 0px black;
+    text-shadow: 2px 1px 0px rgb(37, 37, 37);
 }
 
 main, section, article {
-    background-color: rgba(55, 97, 71, 0.671);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 2px;
     margin-bottom: 20px;
     border-radius: 7px;
@@ -176,7 +176,6 @@ ul > li::marker {
 /* ELEMENTOS DE FORMULÁRIO */
 
 form {
-    background-color: rgba(55, 41, 145, 0.2);
     padding: 15px;
     border-radius: 10px;
 }
@@ -186,7 +185,6 @@ form label {
     width: fit-content;
     font-size: 0.8em;
     font-weight: 100;
-    background-color: rgba(55, 41, 145, 0.2);
     padding: 3px 7px;
     margin-top: 10px;
     margin-bottom: 0px;
